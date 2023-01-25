@@ -12,7 +12,7 @@
 - Profile, update profile, update picture profile.
 - View others people posts.
 - Update/Delete posts by double verification.
-- Work with databases &how to create an authentication (accepts user input from form and send emails to reset password etc).
+- Work with databases & how to create an authentication (accepts user input from and send emails to reset password etc).
 - Access admin page/Nice interface.
 
 ## Need Packages
@@ -40,7 +40,8 @@ django-admin
 ```
 
 - Use `startproject`: will create a new django project here that has a complete structure with different files and everything we need to start in.
-- To start project -
+
+### Create project
 
 ```shell
 django-admin startproject django_project
@@ -64,10 +65,14 @@ tree
 
 ```shell
 .
-|----django_project
-|    |   __init__.py
-|    |   settings.py
-|    |
+|--- django_project
+|     |-- __init__.py
+|     |-- asgi.py
+|     |-- settings.py
+|     |-- urls.py
+|     |-- wsgi.py
+|
+|--- manage.py
 ```
 
 - Now we can see here in structure that on base level we have a manage.py and a `django_project` directory.
@@ -87,7 +92,7 @@ python manage.py runserver
 
 ### Creating blog app
 
-- we can have multiple app for a project  like blog app, store app.
+- A single project can have multiple apps like blog app, store app.
 
 ```py
 # creating blog app

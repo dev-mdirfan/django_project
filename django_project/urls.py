@@ -21,6 +21,7 @@ from django.urls import path, include
 urlpatterns = [
     # Admin panel site page
     path('admin/', admin.site.urls),
+    
     # non-empty route
     # path('blog/', include('blog.urls')),
     # path('blog_dev/', include('blog.urls')),
