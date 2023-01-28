@@ -128,3 +128,111 @@ urlpatterns = [
     path('', views.home, name='blog-home'),
 ]
 ```
+
+
+## First Migration
+
+- First create super user.
+
+```py
+python manage.py createsuperuser
+```
+
+- Second you change `models.py` in app.
+- then commands to migrate
+
+```py
+python manage.py makemigrations
+
+python manage.py sqlmigrate blog 0001
+
+python manage.py migrate
+
+python manage.py shell
+```
+
+Write in migrate shell ->
+
+```py
+from blog.models import Post
+from django.contrib.auth.models import User
+
+# See all users
+User.objects.all()
+
+# First user
+User.objects.first()
+
+# Last User
+User.objects.last()
+
+# Filter result of user
+User.objects.filter(username='Irfan')
+
+# First of filter result
+User.objects.filter(username='Irfan').first()
+
+# Store user in a variable 
+user = User.objects.filter(username='Irfan').first()
+
+# To see id of user
+user.id
+
+# Primary Key of user which is same as id
+user.pk
+
+# get user by id
+user = User.objects.get(id=1)
+
+'''
+Lets create a new post which author is this user
+'''
+
+# Check all posts
+Post.objects.all()
+
+# Create post
+post_1 = Post(title='Blog 1', content='First Post Content!', author=user)
+# or
+post_2 = Post(title='Blog 2', content='Second Post Content!', author_id=user.id)
+
+# after creation of post you have to save
+post_1.save()
+Post.objects.all()
+
+# To exit shell
+exit()
+
+# Post save into variable
+post = Post.objects.first()
+
+# Now you can access all fields
+post.content
+post.date_posted
+post.author
+post.author.email               # grab email of author user
+
+
+# general command
+.modelname_set
+
+# Get all post written by a user
+user.post_set
+user.post_set.all()
+
+# Create post using post_set
+user.post_set.create(title='Blog 3', content='Third Post Content!')
+```
+
+### Create users app
+
+```py
+python manage.py startapp users
+```
+
+
+### Crispy Forms Template
+
+```py
+pip install django-crispy-forms
+```

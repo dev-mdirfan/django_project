@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Post
 ''' 1. previous views
 
 # importing response
@@ -14,24 +14,9 @@ from django.shortcuts import render
 #     return HttpResponse('<h1>Blog About</h1>')
 '''
 
-posts = [
-    {
-        'author': 'Mohd Irfan',
-        'title': 'Blog Post 1',
-        'content': 'First post content',
-        'date_posted': 'January 19, 2023'
-    },
-    {
-        'author': 'Alita',
-        'title': 'Blog Post 2',
-        'content': 'Second post content',
-        'date_posted': 'January 20, 2023'
-    }
-]
-
 def home(request):
     context = {
-        'posts': posts
+        'posts': Post.objects.all()
     }
     return render(request, 'blog/home.html', context)
 
