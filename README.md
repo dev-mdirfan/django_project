@@ -1,134 +1,38 @@
 # Django Project
 
-- Building a full feature application using django framework in python.
+- [Django Project](#django-project)
+  - [Blog Features:](#blog-features)
+  - [Table of Content for Tutorial](#table-of-content-for-tutorial)
+  - [First Migration](#first-migration)
+    - [Create users app](#create-users-app)
+    - [Crispy Forms Template](#crispy-forms-template)
 
-## Feature
 
-- Blog style application where different users can write different posts (blog posts, twitter updates etc).
-- Authentication system(log in).
-- Register ( create new Account).
-- Login (If already have account).
-- Forgot Password(Reset Password by getting an email).
-- Profile, update profile, update picture profile.
-- View others people posts.
-- Update/Delete posts by double verification.
-- Work with databases & how to create an authentication (accepts user input from and send emails to reset password etc).
-- Access admin page/Nice interface.
+Hi, we are going to learn how to build a full feature web application using django framework in python. Django is very popular framework that gives us a lots of functionality right of the box and makes very enjoyable to work with these web applications. First lets see what we are building in this series. And then get started learning how to actually put out together.
 
-## Need Packages
+![GIF of the Project](#)
 
-- Need to install python
-- How to work with virtual environment.
-- wondering how to set-up my text-editor. I have videos check out them.
+## Blog Features:
 
-### 1. Install Django
+A blog style application where different users can write different posts. This can be a blog posts, twitter updates, Instagram post etc.
 
-```shell
-pip install django
-```
-- To be sure.
+- We have an authentication system. Via __register__ new user can create a new account, if you have already account you can __login__ by username and password. Via __Forgot Password__ link that are allow to reset the password by getting an email. And __logout__ off course.
+- User can view their __Profile__ page, update their profile information like - update username, update profile picture and that also resize in background to save picture in web server if that picture too large.
+- On __Home__ page, you can view others people posts. Some post that you have written then you can modify or delete that post.
+- Ability to Update/Delete that posts by double confirmation.
+- Building something like this is great way to learn engine out of the framework because you gonna be exposed so many different things for example we learn how to work with databases & how to create an authentication system and (accepts user input from  __forms__ and send emails to reset password etc).
+- Since this is __Django__ application we also have to ability to access admin page/Nice interface to be able to view all of the backend information and updated if you have the correct permissions.
 
-```shell
-python -m django --version
-```
+## Table of Content for Tutorial
 
-- available commands provided by django.
+I have created docs for step-by-step creating django project.
 
-```shell
-# List of sub commands
-django-admin
-```
+![GIF of Docs](#)
 
-- Use `startproject`: will create a new django project here that has a complete structure with different files and everything we need to start in.
-
-### Create project
-
-```shell
-django-admin startproject django_project
-```
-
-- If you look on your file explorer now you have a directory called `django_project`.
-- Let look at the project structure what that `startproject` command just created for us.
-
-```shell
-cd django_project
-```
-
-- Open a code editor.
-- Now lets look at the project structure that startproject command created for us. Let me show structure in command line interface.
-
-```shell
-tree
-```
-
-![Image](project_structure-tree-command.png)
-
-```shell
-.
-|--- django_project
-|     |-- __init__.py
-|     |-- asgi.py
-|     |-- settings.py
-|     |-- urls.py
-|     |-- wsgi.py
-|
-|--- manage.py
-```
-
-- Now we can see here in structure that on base level we have a manage.py and a `django_project` directory.
-- `manage.py` is a file that allows us to run main line command & we don't want making any changes here.
-- We also have a directory called `django_project` which is also the name that used in our project itself. Within this directory we have 5 different files.
-
-`__init__.py`: It just an empty file. That just tells python this is just python package.
-Next we have `settings.py` This where we have different change settings and configurations we will be using this through out series or development.
-
-```py
-# To run the server
-python manage.py runserver
-# you might have warning we will fix next time.
-```
-
-- localhost = 127.0.0.1
-
-### Creating blog app
-
-- A single project can have multiple apps like blog app, store app.
-
-```py
-# creating blog app
-
-python manage.py startapp blog
-
-# or
-
-django-admin startapp store
-```
-
-- write in `blog/views.py`:
-
-```py
-# importing 
-from django.http import HttpResponse
-
-# Create our views here.
-
-def home(request):
-    return HttpResponse('<h1>Blog Home</h1>')
-```
-
-- map the url in `/blog` create a new file `urls.py` and write -
-
-```py
-from django.urls import path
-
-from . import views
-
-urlpatterns = [
-    # creating path for blog home page
-    path('', views.home, name='blog-home'),
-]
-```
-
+1. __[Installation:](1-Installation.md)__ Packages Needed, Install Django.
+2. __[Applications and Routes:](2-Applications-and-Routes.md)__ Blog App, First View, Map view to urls, Adding another routes.
+3. __[Templates:](3-Templates.md)__
+4. 
 
 ## First Migration
 

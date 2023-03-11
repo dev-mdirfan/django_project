@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="70d5b2bf-073b-4a24-b0dc-500a8ed4cdb6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/README.md" beforePathEscaped="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/README.md" afterPathEscaped="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/admin.py" beforePathEscaped="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/admin.py" afterPathEscaped="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/models.py" beforePathEscaped="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/models.py" afterPathEscaped="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/templates/blog/base.html" beforePathEscaped="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/templates/blog/base.html" afterPathEscaped="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/templates/blog/home.html" beforePathEscaped="$PROJECT_DIR$/blog/templates/blog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/templates/blog/home.html" afterPathEscaped="$PROJECT_DIR$/blog/templates/blog/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/views.py" beforePathEscaped="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/blog/views.py" afterPathEscaped="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/db.sqlite3" beforePathEscaped="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/db.sqlite3" afterPathEscaped="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/django_project/settings.py" beforePathEscaped="$PROJECT_DIR$/django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/django_project/settings.py" afterPathEscaped="$PROJECT_DIR$/django_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/django_project/urls.py" beforePathEscaped="$PROJECT_DIR$/django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/django_project/urls.py" afterPathEscaped="$PROJECT_DIR$/django_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Python/Django/Projects/2-django_project/project_structure-tree-command.png" beforePathEscaped="$PROJECT_DIR$/project_structure-tree-command.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,14 +23,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="2-django_project" type="Python.DjangoServer" factoryName="Django server">
       <module name="2-django_project" />
@@ -70,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674841781656</updated>
       <workItem from="1674841785533" duration="98000" />
+      <workItem from="1676271221620" duration="17000" />
     </task>
     <servers />
   </component>
